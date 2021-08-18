@@ -1,0 +1,55 @@
+<XP10>
+  <cmd button="wheel" action="scratch" />
+  <cmd button="wheel" shift="1" action="loop_move" />
+  <cmd button="wheel" shift="2" action="loop_length" />
+  <cmd button="wheel" shift="3" action="effect_slider" />
+  <cmd button="pitch" action="pitch" value="+0" />
+  <cmd button="pitch" shift="1" action="pitch" />
+  <cmd button="loop1" action="loop" value="1" />
+  <cmd button="loop1" shift="1" action="loop" />
+  <cmd button="loop1" shift="2" action="loop" value="16" />
+  <cmd button="loop2" action="loop" value="2" />
+  <cmd button="loop2" shift="1" action="loop" value="-8" />
+  <cmd button="loop2" shift="2" action="loop" value="32" />
+  <cmd button="loop4" action="loop" value="4" />
+  <cmd button="loop4" shift="1" action="loop" value="-4" />
+  <cmd button="loop4" shift="2" action="loop" value="64" />
+  <cmd button="loop8" action="loop" value="8" />
+  <cmd button="loop8" shift="1" action="loop" value="-2" />
+  <cmd button="loop8" shift="2" action="loop" />
+  <cmd button="fx1" action="effect" value="1" />
+  <cmd button="fx1" shift="1" action="effect" value="temporary 1" />
+  <cmd button="fx2" action="effect" value="2" />
+  <cmd button="fx2" shift="1" action="effect" value="temporary 2" />
+  <cmd button="fx3" action="effect" value="3" />
+  <cmd button="fx3" shift="1" action="effect" value="temporary 3" />
+  <cmd button="scratch" action="hold" value="temporary " />
+  <cmd button="scratch" shift="3" action="effect_button" />
+  <cmd button="load" action="browser_open" />
+  <cmd button="up" action="browser_updown" value="-1" />
+  <cmd button="left" action="browser_switch" value="1" />
+  <cmd button="left" shift="1" action="skip_beat" value="-1" />
+  <cmd button="left" shift="2" action="skip_beat" value="-4" />
+  <cmd button="right" action="browser_switch" value="2" />
+  <cmd button="right" shift="1" action="skip_beat" value="+1" />
+  <cmd button="right" shift="2" action="skip_beat" value="+4" />
+  <cmd button="switch" action="select" />
+  <cmd button="down" action="browser_updown" value="+1" />
+  <cmd button="cue1" action="goto_cue" value="1" />
+  <cmd button="cue1" shift="1" action="set_cue" value="1" />
+  <cmd button="cue2" action="goto_cue" value="2" />
+  <cmd button="cue2" shift="1" action="set_cue" value="2" />
+  <cmd button="cue3" action="goto_cue" value="3" />
+  <cmd button="cue3" shift="1" action="set_cue" value="3" />
+  <cmd button="beatmatch" action="sync" />
+  <cmd button="beatmatch" shift="1" action="pitch" value="auto" />
+  <cmd button="beatmatch" shift="2" action="scratch" value="auto" />
+  <cmd button="beatlock" action="beatlock" />
+  <cmd button="beatlock" shift="1" action="beatlock" value="auto" />
+  <cmd button="beatlock" shift="2" action="mix" value="auto" />
+  <cmd button="stop" action="cue_stop" />
+  <cmd button="stop" shift="1" action="stop" value="auto" />
+  <cmd button="play" action="play_pause" />
+  <cmd button="play" shift="1" action="play_pause" value="temporary " />
+  <cmd button="play" shift="2" action="mix" />
+</XP10>

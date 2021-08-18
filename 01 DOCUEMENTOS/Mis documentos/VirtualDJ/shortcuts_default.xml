@@ -1,0 +1,116 @@
+<shortcuts name="Default" version="1" author="Atomix Productions">
+  <sc key="tab" action="select" chan="active"/>
+  <sc key="ctrl+tab" action="menu" value="+1"/>
+  <sc key="ctrl+shift+tab" action="menu" value="-1"/>
+  <sc key="P" action="play_pause"/>
+  <sc key="shift+P" action="play" value="temporary"/>
+  <sc key="B" action="beatlock"/>
+  <sc key="S" action="stop"/>
+  <sc key="C" action="cue_stop"/>
+  <sc key="space" action="play"/>
+  <sc key="shift+space" action="sync"/>
+  <sc key="L" action="play_n_loop" />
+  <sc keycode="331" action="nudge" value="+256"/>
+  <sc keycode="333" action="nudge" value="-256"/>
+  <sc keycode="4427" action="nudge" value="+4"/>
+  <sc keycode="4429" action="nudge" value="-4"/>
+  <sc keycode="8523" action="skip_beat" value="-1"/>
+  <sc keycode="8525" action="skip_beat" value="+1"/>
+  <sc keycode="12619" action="skip_beat" value="-4" />
+  <sc keycode="12621" action="skip_beat" value="4" />
+  <sc key="num-" action="pitch" value="-8"/>
+  <sc key="num+" action="pitch" value="+8"/>
+  <sc key="shift+num-" action="pitch" value="-1"/>
+  <sc key="shift+num+" action="pitch" value="+1"/>
+  <sc key="ctrl+num-" action="pitch" value="-306"/>
+  <sc key="ctrl+num+" action="pitch" value="+306"/>
+  <sc key="num*" action="pitch" value="reset"/>
+  <sc key="ctrl+num*" action="pitch_reset"/>
+  <sc keycode="329" action="crossfader" value="-128"/>
+  <sc keycode="337" action="crossfader" value="+128"/>
+  <sc keycode="8521" action="crossfader" value="0"/>
+  <sc keycode="8529" action="crossfader" value="4096"/>
+  <sc keycode="4425" action="crossfader" value="-16"/>
+  <sc keycode="4433" action="crossfader" value="+16"/>
+  <sc key="alt+space" action="mix"/>
+  <sc key="ctrl+space" action="automix"/>
+  <sc key="left" action="skip_beat" value="-4"/>
+  <sc key="right" action="skip_beat" value="+4"/>
+  <sc key="end" action="skip_beat" value="-1"/>
+  <sc key="pg.down" action="skip_beat" value="+1"/>
+  <sc key="home" action="skip_beat" value="-16"/>
+  <sc key="pg.up" action="skip_beat" value="+16"/>
+  <sc key="shift+left" action="skip_beat" value="-4 temporary"/>
+  <sc key="shift+right" action="skip_beat" value="+4 temporary"/>
+  <sc key="shift+end" action="skip_beat" value="-1 temporary"/>
+  <sc key="shift+pg.down" action="skip_beat" value="+1 temporary"/>
+  <sc key="shift+home" action="skip_beat" value="-16 temporary"/>
+  <sc key="shift+pg.up" action="skip_beat" value="+16 temporary"/>
+  <sc key="esc" action="loop" value="0"/>
+  <sc keycode="41" action="loop" value="0"/>
+  <sc key="1" action="loop" value="1"/>
+  <sc key="2" action="loop" value="2"/>
+  <sc key="4" action="loop" value="4"/>
+  <sc key="5" action="loop" value="8"/>
+  <sc key="6" action="loop" value="16"/>
+  <sc key="7" action="loop" value="32"/>
+  <sc key="8" action="loop" value="25"/>
+  <sc key="9" action="loop" value="50"/>
+  <sc key="0" action="loop" value="reset"/>
+  <sc key="shift+1" action="loop" value="1 temporary"/>
+  <sc key="shift+2" action="loop" value="2 temporary"/>
+  <sc key="shift+4" action="loop" value="4 temporary"/>
+  <sc key="shift+5" action="loop" value="8 temporary"/>
+  <sc key="shift+6" action="loop" value="16 temporary"/>
+  <sc key="shift+7" action="loop" value="32 temporary"/>
+  <sc key="shift+8" action="loop" value="25 temporary"/>
+  <sc key="shift+9" action="loop" value="50 temporary"/>
+  <sc key="shift+0" action="loop" value="reset temporary"/>
+  <sc key="alt+1" action="goto_cue" value="1"/>
+  <sc key="alt+2" action="goto_cue" value="2"/>
+  <sc key="alt+3" action="goto_cue" value="3"/>
+  <sc key="alt+4" action="goto_cue" value="4"/>
+  <sc key="alt+5" action="goto_cue" value="5"/>
+  <sc key="alt+6" action="goto_cue" value="6"/>
+  <sc key="alt+7" action="goto_cue" value="7"/>
+  <sc key="alt+8" action="goto_cue" value="8"/>
+  <sc key="alt+9" action="goto_cue" value="9"/>
+  <sc key="alt+0" action="goto_cue" value="10"/>
+  <sc key="ctrl+1" action="set_cue" value="1"/>
+  <sc key="ctrl+2" action="set_cue" value="2"/>
+  <sc key="ctrl+3" action="set_cue" value="3"/>
+  <sc key="ctrl+4" action="set_cue" value="4"/>
+  <sc key="ctrl+5" action="set_cue" value="5"/>
+  <sc key="ctrl+6" action="set_cue" value="6"/>
+  <sc key="ctrl+7" action="set_cue" value="7"/>
+  <sc key="ctrl+8" action="set_cue" value="8"/>
+  <sc key="ctrl+9" action="set_cue" value="9"/>
+  <sc key="ctrl+0" action="set_cue" value="10"/>
+  <sc key="F1" action="sample" value="1"/>
+  <sc key="F2" action="sample" value="2"/>
+  <sc key="F3" action="sample" value="3"/>
+  <sc key="F4" action="sample" value="4"/>
+  <sc key="F5" action="sample" value="5"/>
+  <sc key="F6" action="sample" value="6"/>
+  <sc key="F7" action="sample" value="7"/>
+  <sc key="F8" action="sample" value="8"/>
+  <sc key="F9" action="sample" value="9"/>
+  <sc key="F10" action="sample" value="10"/>
+  <sc key="F11" action="sample" value="11"/>
+  <sc key="F12" action="sample" value="12"/>
+  <sc key="shift+F1" action="sample" value="1 temporary"/>
+  <sc key="shift+F2" action="sample" value="2 temporary"/>
+  <sc key="shift+F3" action="sample" value="3 temporary"/>
+  <sc key="shift+F4" action="sample" value="4 temporary"/>
+  <sc key="shift+F5" action="sample" value="5 temporary"/>
+  <sc key="shift+F6" action="sample" value="6 temporary"/>
+  <sc key="shift+F7" action="sample" value="7 temporary"/>
+  <sc key="shift+F8" action="sample" value="8 temporary"/>
+  <sc key="shift+F9" action="sample" value="9 temporary"/>
+  <sc key="shift+F10" action="sample" value="10 temporary"/>
+  <sc key="shift+F11" action="sample" value="11 temporary"/>
+  <sc key="shift+F12" action="sample" value="12 temporary"/>
+  <sc key="ctrl+F" action="search"/>
+  <sc key="ctrl+back" action="goto_last_folder"/>
+  <sc key="ctrl+V" action="video_open"/>
+</shortcuts>

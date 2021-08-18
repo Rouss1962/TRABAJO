@@ -1,0 +1,626 @@
+<language lang="Spanish" author="DJ Coco for Atomix Productions" version="2.1">
+
+  <Errors>
+    <Config>Configuracion Invalida ! Por favor seleccione una combinacion válida.</Config>
+    <Explorer>Error en el Explorador de Windows</Explorer>
+    <Desktop>Imposible encontrar el escritorio</Desktop>
+    <MultiThread>Imposible abrir Multi Ventanas. Usted debe ejectura VirtualDJ desde un sistema operativo multi-thread</MultiThread>
+    <GDI>Error en el driver de video</GDI>
+    <DirectSound>Error en el driver de sonido de DirectX</DirectSound>
+    <DirectSoundUsed>La tarjeta de sonido está siendo utilizada actualmente por otra aplicación</DirectSoundUsed>
+    <DirectSoundMemory>Error en la tarjeta de sonido: no tiene suficiente memoria</DirectSoundMemory>
+    <WDMError>Imposible de iniciar el driver de sonido WDM. Por favor chequee que usted tenga el formato WDM apropiado instalado (y no VxD), con funciones quad-output\n(Note que Win95 y Win98osr1 no soportan drivers WDM)</WDMError>
+    <Memory>No hay suficiente Memoria</Memory>
+    <DataBase>La base de datos interna ha dejado de funcionar</DataBase>
+    <Skin>Archivo de skin inválido (error en línea %i en el archivo xml)</Skin>
+    <DupCD>Este CD existe actualmente en la base de datos. Desea reemplazar el contenido ?</DupCD>
+    <ScanHD>Desea que VirtualDJ escanee su Disco Duro para encontrar archivos de música ?</ScanHD>
+    <QueryClose>La música está actualmente sonando !\nEstá seguro que desea quitar VirtualDJ?</QueryClose>
+    <Security>Una canción está sonando en ésta bandeja.\nEstá seguro que desea frenarla?</Security>
+    <DemoLimit1>Esta característica está disponible solamente en la versión full.\nPor favor visite nuestro sitio web http://www.virtualdj.com/ para ordenar la versión full</DemoLimit1>
+    <DemoLimit2>Está es sólo una versión de prueba de VirtualDJ.\nPor favor visite nuestro sitio web http://www.virtualdj.com/ para ordenar la versión full</DemoLimit2>
+    <SerialError>Protection error %i. Por favor contacte http://www.virtualdj.com/contact/ para mayor información</SerialError>
+    <InvalidSerial>Su número de serie es inválido</InvalidSerial>
+    <BadCDRip>No se puede leer el CD.\nTal vez deba limpiarlo.</BadCDRip>
+    <Controler>El controlador no ha sido detectado.\nPor favor conecte el controlador y reinice VirtualDJ nuevamente.</Controler>
+    <Video>Fallo el inicio de la Càmara!</Video>
+    <AsioError>Error en el driver de sonido ASIO</AsioError>
+<AsioChanError>Error en el driver de sonido ASIO: No hay suficientes canales</AsioChanError>
+    <TimecodeSignalError>No existe señal timecode.\nPor favor toque un vinilo en la bandeja e intentelo nuevamente.\nIf it's still not working, check your cables, and the volumes of your soundcard.</TimecodeSignalError>
+  </Errors>
+
+  <Others>
+    <Search>Buscar: </Search>
+    <Empty>(Vacio)</Empty>
+   <LameHelp>Por favor seleccione un plugin adecuado para grabar en mp3.\n\nSi necesita ayuda, por favor visite nuestro sitio web.</LameHelp>
+    <VScratchHelp>Bienvenido a Virtual-Scratch.\nUsted va a necesitar una webcam o càmara de video para usar èsta caracterìstica.\nUna vez que la càmara estè conectada, pase su mano sobre la línea roja para hacer scractch.</VScratchHelp>
+    <VControlHelp>Bienvenido a Vinyl-Control.\nUsted va a necesitar una webcam o càmara de video para usar èsta caracterìstica.\nUbique la càmara de manera tal que vea el centro del vinilo, luego establece tu bandeja tocadiscos a 45RPM y presiona CALIBRAR.\nUna vez calibrada, usa tu vinilo como siempre, y VirtualDJ te seguirá.</VControlHelp>
+    <SoundCard>Tarjetas de Sonido</SoundCard>
+    <DragToStart>Mueva una canción aquí para cargarla</DragToStart>  
+    <MissingCD>Inserte el CD '%s' en el dispositivo %s</MissingCD>
+    <FadeEntryPoint>Punto de Entrada Fade</FadeEntryPoint>
+    <FadeExitPoint>Punto de Salida Fade</FadeExitPoint>
+    <CutEntryPoint>Punto de Entrada Corte</CutEntryPoint>
+    <CutExitPoint>Punto de Salida Corte</CutExitPoint>
+    <TempoEntryPoint>Punto de Entrada Tempo</TempoEntryPoint>
+    <TempoExitPoint>Punto de Salida Tempo</TempoExitPoint>
+    <FirstAnchor>Primer Ancla</FirstAnchor>
+    <LastAnchor>Ultima Ancla</LastAnchor>
+    <DataBase>Base de Datos</DataBase>
+    <AutoUpdate>VirtualDJ intentará conectarse a internet para verificar si hay una nueva versión disponible.\n\nUsted puede cancelar esta función cuando lo desee desde el menú Configuración.</AutoUpdate>
+    <SearchCount>Cantidad de coincidencias encontradas</SearchCount>
+<SuggestionBox>Suggestion Box</SuggestionBox>
+    <MayaConfig>El nivel "Master" de su tarjeta Maya debe estar en mute con el timecoded vinil.\nDesea que VirtualDJ lo haga por usted ahora?</MayaConfig>
+    <OverwritePrompt>El archivo ya existe.\nDesea sobre-escribirlo?</OverwritePrompt>
+    <NoDelete>Usted no puede borrar un archivo que está siendo utilizado</NoDelete>
+  </Others>
+
+  <Columns>
+    <CD>Disco</CD>
+    <Number>Archivos</Number>
+    <Title>Titulo</Title>
+    <Author>Autor</Author>
+    <Disc>Disco</Disc>
+    <Path>Ruta de acceso</Path>
+    <Bpm>Bpm</Bpm>
+    <Length>Longitud</Length>
+    <Comment>Comentario</Comment>
+  </Columns>
+
+  <ContextMenu>
+    <Rename>Renombrar</Rename>
+    <EditComment>Editar comentario</EditComment>
+    <EditBpm>Editar Bpm</EditBpm>
+    <Delete>Borrar</Delete>
+    <MoveTo>Mover a</MoveTo>
+    <CopyTo>Copiar a</CopyTo>
+    <Analyse>Analizar</Analyse>
+    <Unmark>desmarcadar</Unmark>
+    <Preview>escuchar</Preview>
+    <Recurse>seleccionar toda</Recurse>
+    <SetFavorite>Establecer como favorita</SetFavorite>
+    <RemoveFavorite>Quitar como favorita</RemoveFavorite>
+    <ScanHD>Escanear Disco Duro</ScanHD>
+    <ScanCD>Escanear CD</ScanCD>
+    <DeleteCD>Borrar CD</DeleteCD>
+    <AddSearchDB>Agregar a buscar DB</AddSearchDB>
+    <RemoveSearchDB>Remover de buscar DB</RemoveSearchDB>
+    <GotoFolder>Ir a la carpeta</GotoFolder>
+    <AddToHistory>Agregar a la historia</AddToHistory>
+    <Property>Información del Archivo</Property>
+    <Rip>Convertir a WAV/MP3</Rip>
+    <Load>Cargar...</Load>
+    <Save>Guardar...</Save>
+    <Loop>Loop</Loop>
+    <BeatLock>Bloqueo de Golpes</BeatLock>
+    <Sync>Sincronizar en el</Sync>
+    <Sync4>4º Golpe</Sync4>
+    <Sync1>1º Golpe</Sync1>
+    <SyncHalf>1/2 del Golpe</SyncHalf>
+    <SyncQuarter>1/4 del Golpe</SyncQuarter>
+    <AutoPlay>AutoPlay</AutoPlay>
+  </ContextMenu>
+
+  <Filters>
+    <m3u>Lista de Canciones (*.m3u)\0*.m3u\0</m3u>
+    <wav>Archivo Wav (*.wav)\0*.wav\0</wav>
+    <mp3>Archivo MP3 (*.mp3)\0*.mp3\0</mp3>
+    <txt>Texto (*.txt)\0*.txt\0</txt>
+    <Plugin>Plugins (*.dll)\0*.dll\0</Plugin>
+    <Playlist>Lista de Canciones\0*.m3u;*.pls\0</Playlist>
+    <wavmp3>archivo Wav (*.wav)\0*.wav\0MP3 File (*.mp3)\0*.mp3\0</wavmp3>
+    <bincue>Grabar CD (*.cue/*.bin)\0*.bin;*.cue\0</bincue>
+    <xml>Archivo XML (*.xml)\0*.xml\0</xml>
+    <Samples>Todos los Samples\0*.wav;*.mp3;*.wma;*.asf;*.cda;*.ogg;*.vdj\0VDJ Samples\0*.vdj\0</Samples>
+    <vdj>VDJ Loops (*.vdj)\0*.vdj\0</vdj>
+    <Images>All Images\0*.bmp;*.gif;*.jpg;*.png\0BMP Files\0*.bmp\0GIF Files\0*.gif\0JPG Files\0*.jpg\0PNG Files\0*.png\0</Images>
+  </Filters>
+
+  <BrowserTitles>
+    <LoadPlaylist>Cargar una Lista de Canciones</LoadPlaylist>
+    <SavePlaylist>Guardar una Lista de Canciones</SavePlaylist>
+    <RecordFile>Grabar</RecordFile>
+    <SaveHistory>Guardar Historia</SaveHistory>
+    <RecordPlugin>Guardar Plugin</RecordPlugin>
+    <CopyTo>Seleccione a donde quiere copiar este archivo: </CopyTo>
+    <MoveTo>Seleccione a donde quiere mover este archivo: </MoveTo>
+    <RipFile>Destino</RipFile>
+    <LoadShortcut>Cargar lista de Atajos del teclado</LoadShortcut>
+    <SaveShortcut>Guardar lista de Atajos del teclado</SaveShortcut>
+    <LoadSample>Cargar Sample</LoadSample>
+    <SaveSample>Guardar Sample</SaveSample>
+    <LoadImage>Load Image</LoadImage>
+  </BrowserTitles>
+
+  <Windows>
+    <Default>
+      <OK>Si</OK>
+      <Cancel>No</Cancel>
+    </Default>
+    <EditBpmOnly>
+      <Title>Editar BPM</Title>
+      <OK>OK</OK>
+      <Cancel>Cancelar</Cancel>
+    </EditBpmOnly>
+    <EditComment>
+      <Title>Comentario</Title>
+      <OK>OK</OK>
+    </EditComment>
+    <EditFilename>
+      <Title>Nombre del archivo</Title>
+      <OK>OK</OK>
+    </EditFilename>
+    <ScanHD>
+      <Title>Búsqueda automática de archivos MP3 en el Disco Duro</Title>
+      <OK>OK</OK>
+      <Label5>Buscar:</Label5>
+    </ScanHD>
+    <ScanCD>
+      <Title>Búsqueda automática de archivos mp3</Title>
+      <OK>Escanear</OK>
+      <Label1>Disco :</Label1>
+      <Label2>Nombre</Label2>
+    </ScanCD>
+    <DeleteCD>
+      <Title>Borrar un CD</Title>
+      <OK>Borrar</OK>
+    </DeleteCD>
+    <Serial>
+      <Title>Número de Serie</Title>
+      <Label1>Bienvenido a VirtualDJ\n\nPor favor ingrese el Número de Serie proporcionado en la compra.</Label1>
+      <OK>OK</OK>
+    </Serial>
+    <ShortcutEdit>
+      <Title>Atajo del Teclado</Title>
+      <OK>OK</OK>
+      <Cancel>Cancelar</Cancel>
+      <Label1>Valor=</Label1>
+      <Label2>Resetear</Label2>
+      <Label3>Auto</Label3>
+      <Label4>Momentario</Label4>
+    </ShortcutEdit>
+    <RenameCue>
+      <Title>Nombre del Cue</Title>
+      <OK>OK</OK>
+    </RenameCue>
+    <Error>
+      <Title>Error Fatal</Title>
+      <OK>Recuperar</OK>
+      <Cancel>Apagar</Cancel>
+      <Label1>Un error Fatal ha ocurrido !\nVirtualDJ intentará reabrirse automáticamente.</Label1>
+    </Error>
+    <VScratch>
+      <Title>Virtual-Scratch</Title>
+      <OK>Activar</OK>
+      <Label1>WebCam</Label1>
+      <Label2>Dispositivo</Label2>
+      <Label3>Fuente...</Label3>
+      <Label4>Formato...</Label4>
+      <Label5>Ayuda</Label5>
+    </VScratch>
+    <VControl>
+      <Title>Vinyl-Control</Title>
+      <OK>Activar</OK>
+      <Label1>WebCam</Label1>
+      <Label2>Dispositivo</Label2>
+      <Label3>Fuente...</Label3>
+      <Label4>Formato...</Label4>
+      <Label5>Calibrar</Label5>
+      <Label6>Ayuda</Label6>
+    </VControl>
+    <Settings>
+      <Title>Configuracion</Title>
+        <OK>OK</OK>
+      <Cancel>Cancelar</Cancel>
+      <Label1>Aplicar</Label1>
+    </Settings>
+    <EditBpm>
+      <Title>Ajustar los BPMs</Title>
+        <OK>OK</OK>
+      <Cancel>Cancelar</Cancel>
+    </EditBpm>
+    <EditBpmGrid>
+      <Title>Editar Grilla</Title>
+      <Label1>1º Ancla</Label1>
+      <Label2>Establecer Golpe</Label2>
+      <Label3>2º Ancla</Label3>
+      <Label4>Establecer Golpe</Label4>
+      <Label5>Distancia entre Anclas</Label5>
+      <Label6>golpes</Label6>
+      <Label7>Contador Manual de \nGolpes</Label7>
+    </EditBpmGrid>
+    <EditBpmBpm>
+      <Title>Editar Bpm</Title>
+        <Label1>Bpm</Label1>
+      <Label2>Fase</Label2>
+      <Label3>Copiar desde otro escritorio</Label3>
+    </EditBpmBpm>
+    <EditBpmAutoMix>
+      <Title>Editar AutoMix</Title>
+        <Label1>Mix Fade</Label1>
+      <Label2>Mix Corte</Label2>
+        <Label3>Mix Tempo</Label3>
+      <Label4>Punto de Entrada</Label4>
+      <Label5>Punto de salida</Label5>
+      <Label6>Permitir</Label6>
+    </EditBpmAutoMix>
+    <EditXp10>
+      <Title>XP10 Config</Title>
+      <OK>OK</OK>
+      <Cancel>Cancelar</Cancel>
+      <Label1>Default</Label1>
+      <Label2>Shift 1</Label2>
+      <Label3>Shift 2</Label3>
+      <Label4>Shift 1+2</Label4>
+    </EditXp10>
+    <Property>
+      <Title>Información del Archivo</Title>
+    </Property>
+<Rename>
+      <Title>Renombrar</Title>
+      <OK>OK</OK>
+      <Cancel>Cancelar</Cancel>
+      <Label1>Nombre del Archivo</Label1>
+      <Label2>Autor</Label2>
+      <Label3>Título</Label3>
+    </Rename>
+  </Windows>
+
+  <Options>
+    <General>General</General>
+    <SoundCards>Tarjetas de Sonido</SoundCards>
+    <FAME>Características del FAME</FAME>
+    <Skin>Pieles</Skin>
+    <Shortcuts>Atajos del teclado</Shortcuts>
+    <Network>Red</Network>
+    <Remote>Control Remoto</Remote>
+    <Extensions>Extensiones</Extensions>
+    <Video>Video</Video>
+    <Infos>Infos</Infos>
+
+    <MultiUsers>Multi Usuarios</MultiUsers>
+    <Security>Seguridad</Security>
+    <AutoUpdate>Actualización Automática</AutoUpdate>
+    <Charts>Charts</Charts>
+    <ToolTip>Ayuda</ToolTip>
+    <MemoryLoad>Carga Máx</MemoryLoad>
+<Reactivity>Reactivity</Reactivity>
+    <ReadID3>Leer ID3 Tags</ReadID3>
+    <WriteID3>Escribir VDJ Tags</WriteID3>
+    <Scrolling>Dirección de las Ondas</Scrolling>
+    <RPM>Disco</RPM>
+    <PitchRange>Rango del Pitch</PitchRange>
+
+    <AutoPitch>Auto BPM</AutoPitch>
+    <AutoLevel>Auto Ganancia</AutoLevel>
+    <AutoReset>Auto Reset Pitch</AutoReset>
+<AutoEqReset>Auto Eq-Reset</AutoEqReset>
+    <AutoCue>Auto Cue</AutoCue>
+    <ForceFade>Forzar Fade</ForceFade>
+    <FadeLength>duración de Fade</FadeLength>
+    <Crossfader>Crossfader</Crossfader>
+    <Limiter>Limitador</Limiter>
+    <MasterTempo>Time Stretch</MasterTempo>
+    <DisengageBeatlock>Desactivar Bloqueo Golpes</DisengageBeatlock>
+    <BpmEngine>Motor de Bpm</BpmEngine>
+
+    <Enabled>Activado</Enabled>
+    <Disabled>Desactivado</Disabled>
+    <None>Nunca</None>
+    <Ask>preguntar</Ask>
+    <Always>siempre</Always>
+    <Limited>Limitada</Limited>
+    <5mn>5mn</5mn>
+    <10mn>10mn</10mn>
+    <15mn>15mn</15mn>
+    <30mn>30mn</30mn>
+    <Other>Otro</Other>
+    <Inverted>Invertidas</Inverted>
+    <Normal>Normales</Normal>
+    <rpm33>33rpm</rpm33>
+    <rpm45>45rpm</rpm45>
+    <_8to8>-8% a +8%</_8to8>
+    <_12to12>-12% a +12%</_12to12>
+    <_34to34>-34% a +34%</_34to34>
+    <Smooth>Suave</Smooth>
+   <Full>Full</Full>
+    <Cut>Cortar</Cut>
+    <User>User</User>
+<Manual>Manual</Manual>
+    <OnLoad>En la carga</OnLoad>
+    <OnSwitch>En el cambio</OnSwitch>
+    <TechnoHipHop>techno/hiphop</TechnoHipHop>
+    <AnyMusic>cualquier estilo</AnyMusic>
+    <Always0dB>Siempre 0dB</Always0dB>
+    <AlwaysMatch>Siempre coincidir</AlwaysMatch>
+    <Smart>Inteligente</Smart>
+    <Title>Título</Title>
+    <TitleComment>Título+Comentario</TitleComment>
+    <Fast>Rápido</Fast>
+    <Medium>Medio</Medium>
+    <Slow>Despacio</Slow>
+
+    <SoundCard1>Tarjeta de Sonido</SoundCard1>
+    <SoundCard2>Tarjeta de Sonido 2</SoundCard2>
+    <Software3D>Software 3D</Software3D>
+    <Output71>Salida 7.1</Output71>
+    <Invert>Invertir</Invert>
+    <DJCHelp>Tal vez usted deba cambiar su DJConsole a "DJ mode" en el paniel de configuración de su consola si es que aún no lo ha hecho.</DJCHelp>
+	<ASIOConfig>ASIO Config...</ASIOConfig>
+    <TimecodeConfig>Config. Timecode izquierdo</TimecodeConfig>
+    
+    <Hercule>Hercules DJC</Hercule>
+    <Numark>Numark DMC1/DAC2</Numark>
+    <XP10>XP10</XP10>
+    <Midi>Midi</Midi>
+    <DVinyl>D-Vinyl2020</DVinyl>
+ <Webcam>Webcam</Webcam>
+<VirtualScratch>Virtual Scratch (bare hand)</VirtualScratch>
+    <WebcamVinyl>Webcam Vinyl Control</WebcamVinyl>
+   <Enable>Activar</Enable>
+    <PitchVol>Invertir Pitch/Volume</PitchVol>
+    <StickScratch>Use el stick para scratch</StickScratch>
+    <JogScratch>Gire las ruedas para hacer scratch</JogScratch>
+    <Port>Puerto:</Port>
+    <AutoDetect>Auto-Detectar</AutoDetect>
+    <Swap>Swap</Swap>
+    <Mapper>Mapear...</Mapper>
+    <MidiText>Use los "atajos del teclado" para definir las nuevas acciones y hacer funcionar el dispositivo MIDI</MidiText>
+    <ConfigButton>Configurar...</ConfigButton>
+    <Card>tarjeta:</Card>
+
+    <Add>Agregar...</Add>
+    <Change>Cambiar...</Change>
+    <Delete>Borrar</Delete>
+    <Up>Arriba</Up>
+    <Down>Abajo</Down>
+    <Load>Cargar...</Load>
+    <Save>Guardar...</Save>
+ <Merge>Merge...</Merge>
+
+ <Decoders>Decoders</Decoders>
+<Scratch>Scratch</Scratch>
+    <LeftDeck>bandeja izquierda :</LeftDeck>
+    <RightDeck>bandeja derecha :</RightDeck>
+    <Effects>Efectos</Effects>
+    <DownloadEffects>Descargar un nuevo efecto plugin</DownloadEffects>
+
+    <OSCAddress>Dirección :</OSCAddress>
+    <OSCPort>Puerto :</OSCPort>
+    <NoOSC>Sin sincronización de Red</NoOSC>
+    <OSCSend>Sólo para enviar infos de sincronización</OSCSend>
+    <OSCReceive>Sólo recibe infos de sincronización</OSCReceive>
+    <OSCBoth>Sincronización Total</OSCBoth>
+    <OSCHelp>Use 127.0.0.1 para conección local (en la misma computadora).\nUse la IP (o nombre) de la otra computadora sólo para conectar dos computadoras.\nUse una IP Broadcast (225.0.0.0 to 239.255.255.255) para conectar más de dos computadoras.</OSCHelp>
+
+    <AdvancedConfig>Configuración avanzada</AdvancedConfig>
+    <ChannelCol>Canal</ChannelCol>
+    <SoundCardCol>Tarjeta de Sonido</SoundCardCol>
+    <OutputCol>Salida</OutputCol>
+    <LeftDeckLine>Plato izquierdo</LeftDeckLine>
+    <RightDeckLine>Plato derecho</RightDeckLine>
+    <HeadphonesLine>Auriculares</HeadphonesLine>
+    <AllSamplesLine>Todos los Samples</AllSamplesLine>
+    <SampleLine>Sample %i</SampleLine>
+    <PreviewLine>Pre-escucha</PreviewLine>
+    <OutputInvalid>No disponible\0</OutputInvalid>
+    <OutputNone>-- Nada --\0</OutputNone>
+    <OutputSame>-- Igual --\0</OutputSame>
+    <ChannelsMono>Salida Mono\0</ChannelsMono>
+    <ChannelsStereo>Izquierda\0Derecha\0</ChannelsStereo>
+    <ChannelsQuad>Delantero izquierdo\0Delantero derecho\0Izquierdo trasero\0Derecho trasero\0</ChannelsQuad>
+    <ChannelsSurround>Delantero izquierdo\0Delantero derecho\0Izquierdo trasero\0Derecho trasero\0Centro\0</ChannelsSurround>
+    <Channels5point1>Delantero izquierdo\0Delantero derecho\0Centro\0Bajos\0Izquierdo trasero\0Derecho trasero\0</Channels5point1>
+    <Channels7point1>Delantero izquierdo\0Delantero derecho\0Centro\0Bajos\0Izquierdo trasero\0Derecho trasero\0</Channels7point1>
+    <ChannelsDirectOut>Canal 1\0Canal 2\0Canal 3\0Canal 4\0Canal 5\0Canal 6\0Canal 7\0Canal 8\0Canal 9\0Canal 10\0Canal 11\0Canal 12\0</ChannelsDirectOut>
+  
+    <Website>Revisar el sitio web</Website>
+    <History>Guardar Historia</History>
+  </Options>
+
+  <ToolTips>
+    <Close>Cerrado</Close>
+    <Minimize>Minimizar</Minimize>
+    <Maximize>Pantalla Completa</Maximize>
+    <Play>Play</Play>
+    <Pause>Pausa</Pause>
+    <Play_Pause>Play/Pausa</Play_Pause>
+   <Stop notvalue="auto">Stop</Stop>
+    <Stop value="auto">Ir al primer golpe</Stop>
+    <Sync>Sincronizar</Sync>
+    <Cue_Stop>Cue/Stop</Cue_Stop>
+    <BeatLock notvalue="auto temporary">Bloqueo Mágico</BeatLock>
+    <BeatLock value="auto">Sincronizar</BeatLock>
+    <BeatLock value="temporary" notvalue="auto">Bloqueo Mágico</BeatLock>
+    <Mix notvalue="auto">AutoMezclar</Mix>
+    <Mix value="auto">Activar/Desactivar mezcla Automática</Mix>
+    <Edit_Bpm>Ajustar manualmente la grilla de Golpes</Edit_Bpm>
+    <Edit_Comment>Agregar un comentario para esta canción</Edit_Comment>
+    <Select>Seleccionar auriculares y activar atajos del teclado</Select>
+    <master_volume>Volumen Master</master_volume>
+    <headphone_volume>Volumen del Auricular</headphone_volume>
+    <headphone_mix>Auriculares Mix</headphone_mix>
+    <headphone_crossfader>Auriculares Crossfader</headphone_crossfader>
+    <Pitch notvalue="auto">Pitch (velocidad de la canción)</Pitch>
+    <Pitch value="auto">Pitch automático</Pitch>
+    <Pitch_Reset>Resetear Pitch</Pitch_Reset>
+    <Crossfader>Crossfader</Crossfader>
+    <Level>Level</Level>
+    <Gain notvalue="auto">Ganancia</Gain>
+    <Gain value="auto">Ganancia automática</Gain>
+    <Bass>Bajos</Bass>
+    <Kill_Bass>Quitar Bajos</Kill_Bass>
+    <BassFader>Crossfader de bajos</BassFader>
+    <Medium>Medios</Medium>
+    <Kill_Medium>Quitar Medios</Kill_Medium>
+    <MediumFader>Crossfader de medios</MediumFader>
+    <High>Altos</High>
+    <Kill_High>Quitar Altos</Kill_High>
+    <HighFader>Crossfader de Altos</HighFader>
+    <Eq_Reset>Resetear Ecualizadores</Eq_Reset>
+    <Menu value="0">Archivos de Audio</Menu>
+    <Menu value="1">Samples</Menu>
+    <Menu value="2">Efectos</Menu>
+    <Menu value="3">Grabar</Menu>
+    <Show_Pannel value="41">Mostrar comandos de Mezcla</Show_Pannel>
+    <Show_Pannel value="42">Mostrar panel de puntos Cue</Show_Pannel>
+    <Show_Pannel value="43">Mostrar panel de ecualizadores</Show_Pannel>
+    <Settings>Configurar</Settings>
+<Loop value="reset">Stop loop</Loop>
+    <Loop value="0" notvalue="+">Automatic seamless loop</Loop>
+    <Loop value="25" notvalue="+">Loop sobre 1/4 beat</Loop>
+    <Loop value="50" notvalue="+">Loop sobre 1/2 beat</Loop>
+    <Loop value="1" notvalue="+">Loop sobre 1 golpe</Loop>
+    <Loop value="2" notvalue="+">Loop sobre 2 golpes</Loop>
+    <Loop value="4" notvalue="+">Loop sobre 4 golpes</Loop>
+    <Loop value="8" notvalue="+">Loop sobre 8 golpes</Loop>
+    <Loop value="16" notvalue="+">Loop sobre 16 golpes</Loop>
+    <Loop value="32" notvalue="+">Loop sobre 32 golpes</Loop>
+    <Loop value="64" notvalue="+">Loop sobre 64 golpes</Loop>
+    <Loop value="-1" notvalue="reset">Reducir duración loop</Loop>
+    <Loop value="+1" notvalue="reset">Raise loop length</Loop>
+    <Loop_Move value="auto">Establecer punto de entrada del loop</Loop_Move>
+    <Loop_In value="auto">Establecer punto de entrada del loop</Loop_In>
+    <Loop_Out value="auto">Establecer punto de salida del loop</Loop_Out>
+    <Loop_Length value="auto">Establecer punto de salida del loop</Loop_Length>
+    <Loop_Move notvalue="auto">Cambiar loop</Loop_Move>
+    <Loop_In notvalue="auto">Mover punto de entrada loop</Loop_In>
+    <Loop_Out notvalue="auto">Mover punto salida loop</Loop_Out>
+    <Loop_Length notvalue="auto">Cambiar duración loop</Loop_Length>
+    <Loop_Shift>Cambiar loop en un número de golpes</Loop_Shift>
+    <Beat_Juggle>Beat Juggling</Beat_Juggle>
+    <Beat_Juggle value="1">Beat Juggling</Beat_Juggle>
+    <Skip_Beat value="-64">retroceder 64 golpes</Skip_Beat>    
+    <Skip_Beat value="-32">Retroceder 32 golpes</Skip_Beat>
+    <Skip_Beat value="-16">Retroceder 16 golpes</Skip_Beat>
+    <Skip_Beat value="-8">Retroceder 8 golpes</Skip_Beat>
+    <Skip_Beat value="-4">Retroceder 4 golpes</Skip_Beat>
+    <Skip_Beat value="-2">Retroceder 2 golpes</Skip_Beat>
+    <Skip_Beat value="-1">Retroceder 1 golpe</Skip_Beat>
+    <Skip_Beat value="1">Adelantarse 1 golpe</Skip_Beat>
+    <Skip_Beat value="2">Adelantarse 2 golpes</Skip_Beat>
+    <Skip_Beat value="4">Adelantarse 4 golpes</Skip_Beat>
+    <Skip_Beat value="8">Adelantarse 8 golpes</Skip_Beat>
+    <Skip_Beat value="16">Adelantarse 16 golpes</Skip_Beat>
+    <Skip_Beat value="32">Adelantarse 32 golpes</Skip_Beat>
+    <Skip_Beat value="64">Adelantarse 64 golpes</Skip_Beat>
+    <Effect value="1">Efecto (ranura 1)</Effect>
+    <Effect value="2">Efecto (ranura 2)</Effect>
+    <Effect value="3">Efecto (ranura 3)</Effect>
+    <Sample value="1">Sample (ranura 1)</Sample>
+    <Sample value="2">Sample (ranura 2)</Sample>
+    <Sample value="3">Sample (ranura 3)</Sample>
+    <Sample value="4">Sample (ranura 4)</Sample>
+    <Sample value="5">Sample (ranura 5)</Sample>
+    <Sample value="6">Sample (ranura 6)</Sample>
+    <Sample value="7">Sample (ranura 7)</Sample>
+    <Sample value="8">Sample (ranura 8)</Sample>
+    <Sample value="9">Sample (ranura 9)</Sample>
+    <Sample value="10">Sample (ranura 10)</Sample>
+    <Sample value="11">Sample (ranura 11)</Sample>
+    <Sample value="12">Sample (ranura 12)</Sample>
+    <Set_Cue>Guardar la posición actual como punto cue 1</Set_Cue>
+    <Set_Cue value="1">Guardar la posición actual como punto cue 1</Set_Cue>
+    <Set_Cue value="2">Guardar la posición actual como punto cue 2</Set_Cue>
+    <Set_Cue value="3">Guardar la posición actual como punto cue 3</Set_Cue>
+    <Set_Cue value="4">Guardar la posición actual como punto cue 4</Set_Cue>
+    <Set_Cue value="5">Guardar la posición actual como punto cue 5</Set_Cue>
+    <Goto_Cue>ir al punto cue 1</Goto_Cue>
+    <Goto_Cue value="1">ir al punto cue 1</Goto_Cue>
+    <Goto_Cue value="2">ir al punto cue 2</Goto_Cue>
+    <Goto_Cue value="3">ir al punto cue 3</Goto_Cue>
+    <Goto_Cue value="4">ir al punto cue 4</Goto_Cue>
+    <Goto_Cue value="5">ir al punto cue 5</Goto_Cue>
+    <Song_Pos>Posición en la canción</Song_Pos>
+<Scratch notvalue="auto">Scratch</Scratch>
+    <Scratch value="auto">Cuadrar Golpes automáticamente</Scratch>
+    <Hold>Detener el disco</Hold>
+    
+    <lock_pannel value="0">Bloquear el panel</lock_pannel>
+    <lock_pannel value="1">Bloquear el panel</lock_pannel>
+    <favorite_folder>Establecer como carpeta favorita</favorite_folder>
+    <automix>Mezcla Automática</automix>
+    <randomize>Orden Aleatorio</randomize>
+    <onlynew>Sólo canciones nuevas</onlynew>
+    <repeat_playlist>Repetir la Lista de Canciones (Playlist)</repeat_playlist>
+    <load_playlist>Cargar una Lista de Canciones</load_playlist>
+    <save_playlist>Guardar una Lista de Canciones</save_playlist>
+    <free_playlist>Lista de Canciones libre</free_playlist>
+    <working_playlist>Traer esta lista de canciones a la lista</working_playlist>
+    <record>Comenzar la grabación</record>
+    <record_cut>Cortar a otro archivo</record_cut>
+    <load_sample value="1">Cargar un sample</load_sample>
+    <load_sample value="2">Cargar un sample</load_sample>
+    <load_sample value="3">Cargar un sample</load_sample>
+    <load_sample value="4">Cargar un sample</load_sample>
+    <load_sample value="5">Cargar un sample</load_sample>
+    <load_sample value="6">Cargar un sample</load_sample>
+    <load_sample value="7">Cargar un sample</load_sample>
+    <load_sample value="8">Cargar un sample</load_sample>
+    <load_sample value="9">Cargar un sample</load_sample>
+    <load_sample value="10">Cargar un sample</load_sample>
+    <load_sample value="11">Cargar un sample</load_sample>
+    <load_sample value="12">Cargar un sample</load_sample>
+    <sample_rec_jingle value="1">Grabar un sample en modo jingle</sample_rec_jingle>
+    <sample_rec_jingle value="2">Grabar un sample en modo jingle</sample_rec_jingle>
+    <sample_rec_jingle value="3">Grabar un sample en modo jingle</sample_rec_jingle>
+    <sample_rec_jingle value="4">Grabar un sample en modo jingle</sample_rec_jingle>
+    <sample_rec_jingle value="5">Grabar un sample en modo jingle</sample_rec_jingle>
+    <sample_rec_jingle value="6">Grabar un sample en modo jingle</sample_rec_jingle>
+    <sample_rec_jingle value="7">Grabar un sample en modo jingle</sample_rec_jingle>
+    <sample_rec_jingle value="8">Grabar un sample en modo jingle</sample_rec_jingle>
+    <sample_rec_jingle value="9">Grabar un sample en modo jingle</sample_rec_jingle>
+    <sample_rec_jingle value="10">Grabar un sample en modo jingle</sample_rec_jingle>
+    <sample_rec_jingle value="11">Grabar un sample en modo jingle</sample_rec_jingle>
+    <sample_rec_jingle value="12">Grabar un sample en modo jingle</sample_rec_jingle>
+    <sample_rec_loop value="1">Grabar un loop sample</sample_rec_loop>
+    <sample_rec_loop value="2">Grabar un loop sample</sample_rec_loop>
+    <sample_rec_loop value="3">Grabar un loop sample</sample_rec_loop>
+    <sample_rec_loop value="4">Grabar un loop sample</sample_rec_loop>
+    <sample_rec_loop value="5">Grabar un loop sample</sample_rec_loop>
+    <sample_rec_loop value="6">Grabar un loop sample</sample_rec_loop>
+    <sample_rec_loop value="7">Grabar un loop sample</sample_rec_loop>
+    <sample_rec_loop value="8">Grabar un loop sample</sample_rec_loop>
+    <sample_rec_loop value="9">Grabar un loop sample</sample_rec_loop>
+    <sample_rec_loop value="10">Grabar un loop sample</sample_rec_loop>
+    <sample_rec_loop value="11">Grabar un loop sample</sample_rec_loop>
+    <sample_rec_loop value="12">Grabar un loop sample</sample_rec_loop>
+    <save_sample value="1">Guardar el sample</save_sample>
+    <save_sample value="2">Guardar el sample</save_sample>
+    <save_sample value="3">Guardar el sample</save_sample>
+    <save_sample value="4">Guardar el sample</save_sample>
+    <save_sample value="5">Guardar el sample</save_sample>
+    <save_sample value="6">Guardar el sample</save_sample>
+    <save_sample value="7">Guardar el sample</save_sample>
+    <save_sample value="8">Guardar el sample</save_sample>
+    <save_sample value="9">Guardar el sample</save_sample>
+    <save_sample value="10">Guardar el sample</save_sample>
+    <save_sample value="11">Guardar el sample</save_sample>
+    <save_sample value="12">Guardar el sample</save_sample>
+    <sample_options value="1">Sample Menu</sample_options>
+    <sample_options value="2">Sample Menu</sample_options>
+    <sample_options value="3">Sample Menu</sample_options>
+    <sample_options value="4">Sample Menu</sample_options>
+    <sample_options value="5">Sample Menu</sample_options>
+    <sample_options value="6">Sample Menu</sample_options>
+    <sample_options value="7">Sample Menu</sample_options>
+    <sample_options value="8">Sample Menu</sample_options>
+    <sample_options value="9">Sample Menu</sample_options>
+    <sample_options value="10">Sample Menu</sample_options>
+    <sample_options value="11">Sample Menu</sample_options>
+    <sample_options value="12">Sample Menu</sample_options>
+    <sample_volume_1>Sample Volume</sample_volume_1>
+    <sample_volume_2>Sample Volume</sample_volume_2>
+    <sample_volume_3>Sample Volume</sample_volume_3>
+    <sample_volume_4>Sample Volume</sample_volume_4>
+    <sample_volume_5>Sample Volume</sample_volume_5>
+    <sample_volume_6>Sample Volume</sample_volume_6>
+    <sample_volume_7>Sample Volume</sample_volume_7>
+    <sample_volume_8>Sample Volume</sample_volume_8>
+    <sample_volume_9>Sample Volume</sample_volume_9>
+    <sample_volume_10>Sample Volume</sample_volume_10>
+    <sample_volume_11>Sample Volume</sample_volume_11>
+    <sample_volume_12>Sample Volume</sample_volume_12>
+  </ToolTips>
+  
+</language>
