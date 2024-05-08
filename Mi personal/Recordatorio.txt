@@ -59,3 +59,10 @@ TWITER
 rosyriv62@hotmail.com
 Atenasmacrosy
 
+
+
+Primero los cambios ya se guardaron y cambiaron
+
+Ahora donce dice Summary se va a poner el concepto
+Despues se presiona Commit to Main y al final Fetch
+origin para que se terminen los cambios
